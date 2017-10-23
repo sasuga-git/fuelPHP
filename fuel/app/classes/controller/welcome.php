@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Fuel is a fast, lightweight, community driven PHP5 framework.
  *
@@ -21,6 +22,7 @@
  */
 class Controller_Welcome extends Controller
 {
+
 	/**
 	 * The basic welcome message
 	 *
@@ -28,7 +30,7 @@ class Controller_Welcome extends Controller
 	 * @return  Response
 	 */
 	public function action_index()
-	{	
+	{
 		return Response::forge(View::forge('welcome/index'));
 	}
 
@@ -54,4 +56,5 @@ class Controller_Welcome extends Controller
 	{
 		return Response::forge(Presenter::forge('welcome/404'), 404);
 	}
+
 }
