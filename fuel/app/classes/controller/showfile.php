@@ -5,6 +5,8 @@ class Controller_Showfile extends Controller
 
 	public function action_index()
 	{
+		//実行時間の計測ポイント
+		Profiler::mark('indexアクションの開始');
 		//ファイル名を指定
 		$file = DOCROOT . 'show_file.php';
 
@@ -18,7 +20,8 @@ class Controller_Showfile extends Controller
 		$view->set('title', 'ファイル表示プログラム');
 		//ビューにcontentをセット
 		$view->set('content', $content);
-
+		//実行時間の計測
+		Profiler::mark('indexのアクションの終了');
 		//Viewオブジェクトを返す
 		return $view;
 	}
