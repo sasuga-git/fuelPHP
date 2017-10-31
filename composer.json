@@ -20,7 +20,7 @@
     },
     "require-dev": {
         "fuel/docs": "1.8.*",
-        "phpunit/phpunit": "6.4.*"
+        "phpunit/phpunit": "3.7.*"
     },
     "suggest": {
         "dwoo/dwoo" : "Allow Dwoo templating with the Parser package",

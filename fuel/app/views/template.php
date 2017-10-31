@@ -5,11 +5,12 @@
 		<title><?php echo $title; ?></title>
 	</head>
 	<body>
+		<h1>お問い合わせ</h1>
 		<div id="wapper">
 			<?php echo $content; ?>
 			<hr>
 			<p class="footer">
-				<?php echo $footer; ?>
+				Powered by <?php echo Html::anchor('http://fuelphp.com/', 'FuelPHP') ?>
 			</p>
 		</div>
 	</body>

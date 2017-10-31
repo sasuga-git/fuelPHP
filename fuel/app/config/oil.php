@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Fuel
  *
@@ -11,7 +12,6 @@
  * @copyright  2010 - 2016 Fuel Development Team
  * @link       http://fuelphp.com
  */
-
 /**
  * NOTICE:
  *
@@ -20,10 +20,8 @@
  *
  * This will allow you to upgrade fuel without losing your custom config.
  */
-
 return array(
 	'phpunit' => array(
-
 		/**
 		 * These phpunit settings allow oil to run your project's phpunit
 		 * tests. If you've installed phpunit as a global install via
@@ -43,9 +41,7 @@ return array(
 		 *
 		 * At present, there is no support for phpunit.phar.
 		 */
-
-		'autoload_path' => 'PHPUnit/Autoload.php' ,
-		'binary_path'   => VENDORPATH.'bin/phpunit' ,
-
+		'autoload_path' => 'PHPUnit/Autoload.php',
+		'binary_path' => VENDORPATH . 'bin/phpunit',
 	),
 );
